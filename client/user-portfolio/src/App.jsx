@@ -1,14 +1,19 @@
-import { useState } from 'react'
+import React from 'react'
 import './App.css'
+import { Route, Routes } from 'react-router-dom'
+import Home from './pages/Home'
+import Navbar from './components/Navbar'
 
 function App() {
 
   return (
-    <>
-      <h1 className="text-3xl font-bold underline">
-      Hello world! h11
-    </h1>
-    </>
+
+    <div className="min-h-screen bg-slate-50">
+    <Navbar/>
+     <Routes>
+      <Route path='/' element={<Home/>} />
+     </Routes>
+    </div>
   )
 }
 

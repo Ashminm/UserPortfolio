@@ -4,6 +4,7 @@ import About from '../components/About'
 import Contact from '../components/Contact'
 import Footer from '../components/Footer'
 import Service from '../components/Service'
+import Work from '../components/Work'
 
 
 function Home() {
@@ -17,6 +18,9 @@ function Home() {
         </div>
         <div>
             <Service/>
+        </div>
+        <div>
+            <Work/>
         </div>
         <div>
             <Contact/>

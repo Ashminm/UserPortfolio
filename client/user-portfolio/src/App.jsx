@@ -10,6 +10,7 @@ import Contact from './components/Contact'
 import Education from './components/Education'
 import Experiance from './components/Experiance'
 import Current from './components/Current'
+import Auth from './components/Auth'
 
 function App() {
 
@@ -27,6 +28,8 @@ function App() {
       <Route path='/education' element={<Education/>} />
       <Route path='/experiance' element={<Experiance/>} />
       <Route path='/current' element={<Current/>} />
+
+      <Route path='/auth' element={<Auth/>} />
      </Routes>
     </div>
   )

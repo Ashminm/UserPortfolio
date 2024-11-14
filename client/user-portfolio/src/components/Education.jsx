@@ -20,7 +20,7 @@ function Education() {
                 <h2 className='lg:text-2xl md:text-2xl sm:text-lg xs:text-md mb-2'>Luminar Technolab</h2>
                 <h4 className='lg:text-2xl md:text-2xl sm:text-lg xs:text-md font-semibold mb-2 mb-2'>Web development</h4>
                 <div className="flex justify-between w-3/5">
-                <h4 className='lg:text-lg md:text-xl sm:text-lg xs:text-md text-red-400'>2023 - 2024</h4> <a className='lg:text-md md:text-md sm:text-sm xs:text-sm' href="">Link</a>
+                <h4 className='lg:text-lg md:text-xl sm:text-lg xs:text-md text-red-400'>2023 - 2024</h4> <a className='lg:text-md md:text-md sm:text-sm xs:text-sm' href="#" target='_blank'><i className='material-icons text-3xl'>assistant_navigation</i></a>
                 </div>
                 </div>
         </div>
@@ -30,7 +30,7 @@ function Education() {
                 <h2 className='lg:text-2xl md:text-2xl sm:text-lg xs:text-md mb-2'>Luminar Technolab</h2>
                 <h4 className='lg:text-2xl md:text-2xl sm:text-lg xs:text-md font-semibold mb-2 mb-2'>Web development</h4>
                 <div className="flex justify-between w-3/5">
-                <h4 className='lg:text-lg md:text-xl sm:text-lg xs:text-md text-red-400'>2023 - 2024</h4> <a className='lg:text-md md:text-md sm:text-sm xs:text-sm' href="">Link</a>
+                <h4 className='lg:text-lg md:text-xl sm:text-lg xs:text-md text-red-400'>2023 - 2024</h4> <a className='lg:text-md md:text-md sm:text-sm xs:text-sm' href="#" target='_blank'><i className='material-icons text-3xl'>assistant_navigation</i></a>
                 </div>
                 </div>
         </div>
@@ -40,7 +40,7 @@ function Education() {
                 <h2 className='lg:text-2xl md:text-2xl sm:text-lg xs:text-md mb-2'>Luminar Technolab</h2>
                 <h4 className='lg:text-2xl md:text-2xl sm:text-lg xs:text-md font-semibold mb-2 mb-2'>Web development</h4>
                 <div className="flex justify-between w-3/5">
-                <h4 className='lg:text-lg md:text-xl sm:text-lg xs:text-md text-red-400'>2023 - 2024</h4> <a className='lg:text-md md:text-md sm:text-sm xs:text-sm' href="">Link</a>
+                <h4 className='lg:text-lg md:text-xl sm:text-lg xs:text-md text-red-400'>2023 - 2024</h4> <a className='lg:text-md md:text-md sm:text-sm xs:text-sm' href="#" target='_blank'><i className='material-icons text-3xl'>assistant_navigation</i></a>
                 </div>
                 </div>
         </div>

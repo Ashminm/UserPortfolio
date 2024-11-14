@@ -8,6 +8,8 @@ import Service from './components/Service'
 import Work from './components/Work'
 import Contact from './components/Contact'
 import Education from './components/Education'
+import Experiance from './components/Experiance'
+import Current from './components/Current'
 
 function App() {
 
@@ -23,6 +25,8 @@ function App() {
       <Route path='/contact' element={<Contact/>} />
 
       <Route path='/education' element={<Education/>} />
+      <Route path='/experiance' element={<Experiance/>} />
+      <Route path='/current' element={<Current/>} />
      </Routes>
     </div>
   )

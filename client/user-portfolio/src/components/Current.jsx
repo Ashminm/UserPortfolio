@@ -8,7 +8,7 @@ function Current() {
         <h1 className='text-4xl mb-5'>Current</h1>
         <div className='flex justify-center flex-col items-center'>
             <div className="shadow-md border w-full sm:w-4/5 md:w-3/5 lg:w-3/6  flex justify-center flex-col rounded-md mb-4">
-                    <div className="bg-slate-200 w-[93%] m-7 rounded-md p-5">
+                    <div className="bg-slate-200 lg:w-[93%] md:w-[88%] sm:w-[84%] xs:w-[80%] mx-auto m-7 rounded-md p-5">
                         <h3 className='text-xl text-sky-400 mb-2'>2023 - Present</h3>
                         <h3 className='font-semibold text-xl'>Web developer</h3>
                         <h3 className='text-xl my-1'>Zidio development. <span>Internship</span></h3>

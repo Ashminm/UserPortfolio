@@ -11,6 +11,7 @@ import Education from './components/Education'
 import Experiance from './components/Experiance'
 import Current from './components/Current'
 import Auth from './components/Auth'
+import Dashboard from './components/Dashboard'
 
 function App() {
 
@@ -30,6 +31,7 @@ function App() {
       <Route path='/current' element={<Current/>} />
 
       <Route path='/auth' element={<Auth/>} />
+      <Route path='/dashboard' element={<Dashboard/>} />
      </Routes>
     </div>
   )

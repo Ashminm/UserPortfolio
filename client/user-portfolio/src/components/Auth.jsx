@@ -1,30 +1,50 @@
-import React, { useState } from 'react';
+import React, { useState,useEffect } from 'react';
 import { GoogleLogin } from '@react-oauth/google';
 import { jwtDecode } from "jwt-decode";
+import {Register,Login} from '../Services/Apicall'
 
 function Auth() {
   const [register, setRegister] = useState(false);
 
-
-  const handleGoogleLoginSuccess = (credentialResponse) => {
+const handleGoogleLoginSuccess = (credentialResponse) => {
     const credentialResponseDecoded = jwtDecode(credentialResponse.credential);
 
-    // Set registration details
     const userDetails = {
-      firstname: credentialResponseDecoded.given_name || "Guest",
-      lastname: credentialResponseDecoded.family_name  || "Guest",
-      name: credentialResponseDecoded.name || "Guest",
-      email: credentialResponseDecoded.email || "No email provided",
-      picture: credentialResponseDecoded.picture || "",
-      acid: credentialResponseDecoded.jti || "no id",
-      acno: credentialResponseDecoded.nbf || "no number",
+        firstname: credentialResponseDecoded.given_name || "Guest",
+        lastname: credentialResponseDecoded.family_name || "Guest",
+        name: credentialResponseDecoded.name || "Guest",
+        email: credentialResponseDecoded.email || "No email provided",
+        Token: credentialResponseDecoded.jti || "No token",
+        acno: credentialResponseDecoded.nbf || "No number",
     };
+    // console.log("Updated User Data:", userDetails);
 
-    console.log(userDetails);
-    console.log(credentialResponseDecoded);
-    
+    const registration = async () => {
+      if (!userDetails.Token || !userDetails.email || !userDetails.name || !userDetails.acno) {
+          console.log("You are not eligible to register");
+          return;
+      }
   
+      try {
+          const result = await Register(userDetails);
+          console.log("result",userDetails);
+  
+          if (result.status === 200) {
+              console.log(`Successfully registered ${result.userDetails.name}`);
+  
+          } else {
+              console.log("Error during registration:", result.message);
+          }
+      } catch (error) {
+          console.error("Registration failed:", error.message);
+      }
   };
+  
+  // To test or call the registration function:
+  registration();
+  
+    
+};
 
   const toggleRegister = () => setRegister(!register);
 

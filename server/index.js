@@ -2,12 +2,14 @@ require('dotenv').config()
 const express=require('express')
 const cors=require('cors')
 
-
 const App=express()
 App.use(cors())
 App.use(express.json())
+require('./DBConnection/connect')
+const routes= require('./Router/routes');
+App.use(routes)
 
-const PORT=3000 || process.env.PORT
+const PORT=4000 || process.env.PORT
 
 App.listen(PORT,()=>{
         console.log('App running:',PORT);

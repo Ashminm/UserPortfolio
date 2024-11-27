@@ -8,6 +8,10 @@ App.use(express.json())
 require('./DBConnection/connect')
 const routes= require('./Router/routes');
 App.use(routes)
+const middilewares =require('./Middileware/JWT')
+App.use(middilewares)
+
+App.use('/uploads',express.static('./uploads'))
 
 const PORT=4000 || process.env.PORT
 

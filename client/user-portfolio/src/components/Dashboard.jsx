@@ -10,7 +10,7 @@ function Dashboard() {
         </div>
             <div className="grid xl:grid-cols-2 lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1 xs:grid-cols-1 gap-5">
                 <div className="shadow-md w-full border rounded-md p-3 pt-5">
-                    <p className='text-2xl mb-2'>Header me</p>
+                    <p className='text-2xl mb-2'>Profile</p>
                         <div className="bg-gray-100 rounded-md p-3 py-5 mb-6">
                             <div className="flex justify-between items-center">
                                <div className='flex flex-col xs:w-auto w-full lg:pe-10 md:pe-7 sm:pe-4 xs:pe-2 '>
@@ -36,7 +36,7 @@ function Dashboard() {
 
                             </div>
                         </div>
-                        <p className='text-2xl mb-2'>About me</p>
+                        <p className='text-2xl mb-2'>About</p>
                         <div className="bg-gray-100 rounded-md p-3 py-4 w-full mb-5">
                         <div className="flex justify-between">
                                <div className='flex flex-col pe-6 '>

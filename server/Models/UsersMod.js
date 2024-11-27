@@ -1,7 +1,7 @@
 const mongoose = require('mongoose')
 
 const usersSchema=new mongoose.Schema({
-    token:{
+    Gtoken:{
         type:String,
         required:true,
         unique:true

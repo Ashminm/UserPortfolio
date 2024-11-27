@@ -14,13 +14,13 @@ const handleGoogleLoginSuccess = (credentialResponse) => {
         lastname: credentialResponseDecoded.family_name || "Guest",
         name: credentialResponseDecoded.name || "Guest",
         email: credentialResponseDecoded.email || "No email provided",
-        Token: credentialResponseDecoded.jti || "No token",
+        GToken: credentialResponseDecoded.jti || "No token",
         acno: credentialResponseDecoded.nbf || "No number",
     };
     // console.log("Updated User Data:", userDetails);
 
     const registration = async () => {
-      if (!userDetails.Token || !userDetails.email || !userDetails.name || !userDetails.acno) {
+      if (!userDetails.GToken || !userDetails.email || !userDetails.name || !userDetails.acno) {
           console.log("You are not eligible to register");
           return;
       }

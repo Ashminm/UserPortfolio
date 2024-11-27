@@ -20,6 +20,7 @@ router.post('/add-about',middilewares,multerConfig.fields([{name:'aboutimg',maxC
 router.get('/get-about',middilewares,aboutControl.getAbout)
 
 router.post('/add-lang',middilewares,languageControl.addLanguage)
+router.get('/get-lang',middilewares,languageControl.getLanguage)
 
 
 module.exports=router

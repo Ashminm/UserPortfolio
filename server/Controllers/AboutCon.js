@@ -22,9 +22,7 @@ exports.addAbout=async(req,res)=>{
 exports.getAbout=async(req,res)=>{
     try{
         const userID=req.payload
-        console.log(userID);
         const result=await abouts.find({userID})
-        console.log(result)
         res.status(200).json(result)
         
     }catch(err){

@@ -7,6 +7,9 @@ const userControl = require('../Controllers/UsersCon')
 const profileControl= require('../Controllers/ProfileCon')
 const aboutControl=require('../Controllers/AboutCon')
 const languageControl=require('../Controllers/LanguageCon')
+const currentControl=require('../Controllers/CurrentCon')
+const expeControll=require('../Controllers/ExpeCon')
+const skillControll=require('../Controllers/SkillCon')
 
 const router=new express.Router()
 
@@ -18,9 +21,21 @@ router.get('/get-profile',middilewares,profileControl.getProfile)
 
 router.post('/add-about',middilewares,multerConfig.fields([{name:'aboutimg',maxCount:1}]),aboutControl.addAbout)
 router.get('/get-about',middilewares,aboutControl.getAbout)
+router.get('/get-about-one',middilewares,aboutControl.getAboutOne)
 
 router.post('/add-lang',middilewares,languageControl.addLanguage)
 router.get('/get-lang',middilewares,languageControl.getLanguage)
+
+router.post('/add-current',middilewares,currentControl.addCurrent)
+router.get('/get-current',middilewares,currentControl.getCurrent)
+router.get('/get-current-one',middilewares,currentControl.getCurrentOne)
+
+router.post('/add-experiance',middilewares,expeControll.addExpe)
+router.get('/get-experiance',middilewares,expeControll.getExpe)
+
+router.post('/add-skill',middilewares,skillControll.addSkills)
+router.get('/get-skills',middilewares,skillControll.getSkills)
+
 
 
 module.exports=router

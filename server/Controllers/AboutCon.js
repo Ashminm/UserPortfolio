@@ -29,3 +29,14 @@ exports.getAbout=async(req,res)=>{
         res.status(401).json(err)
     }
 }
+
+exports.getAboutOne=async(req,res)=>{
+    try{
+        const userID=req.payload
+        const result=await abouts.find({userID}).sort({_id: -1}).limit(1)
+        res.status(200).json(result)
+        
+    }catch(err){
+        res.status(401).json(err)
+    }
+}

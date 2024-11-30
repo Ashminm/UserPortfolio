@@ -31,3 +31,13 @@ exports.getProfile=async(req,res)=>{
         res.status(401).json(err)
     }
 }
+
+exports.removeProfile=async(req,res)=>{
+    try{
+        const userID=req.payload
+        const result=await profiles.deleteOne({userID})
+        res.status(200).json(result)
+    }catch(err){
+        res.status(401).json(err)
+    }
+}

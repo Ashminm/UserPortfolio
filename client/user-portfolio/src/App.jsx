@@ -17,7 +17,7 @@ function App() {
 
   return (
 
-    <div className="min-h-screen bg-slate-50">
+    <div className="min-h-screen bg-slate-50 xs:w-fit sm:w-auto md:w-auto lg:w-auto">
     <Navbar/>
      <Routes>
       <Route path='/' element={<Home/>} />

@@ -14,7 +14,7 @@ const RecentSchema=new mongoose.Schema({
         required:true
     },
     project_type:{
-        type:Number,
+        type:String,
         required:true
     },
     projectlink:{
@@ -26,6 +26,7 @@ const RecentSchema=new mongoose.Schema({
         required:true
     }
 })
+
 
 const recentworks=mongoose.model('recentworks',RecentSchema)
 module.exports=recentworks

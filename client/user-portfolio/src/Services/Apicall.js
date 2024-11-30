@@ -7,19 +7,20 @@ const commonApi = async (method, url, body, headers) => {
         method,
         url,
         data: body,
-        headers: headers ? headers : { "Content-Type": "application/json" },
+        headers: headers || { "Content-Type": "application/json" },
     };
+    
     return await axios(urlConf)
-        .then((res) => {
-            return res;
-        })
-        .catch((err) => {
-            return err;
-        });
+    .then((res) => res)
+    .catch((err) => {
+        console.error("API Error:", err);
+        throw err;
+    });
+
 };
 
 
-export const Register = async (data) => {
+export const RegisterApi = async (data) => {
     return await commonApi("POST", `${BASEURL}/user/register`, data, "");
 };
 export const Login = async (data) => {

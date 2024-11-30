@@ -1,11 +1,20 @@
 import React, { useState,useEffect } from 'react';
 import { GoogleLogin } from '@react-oauth/google';
 import { jwtDecode } from "jwt-decode";
-import {Register,Login} from '../Services/Apicall'
+import {RegisterApi,Login} from '../Services/Apicall'
 
 function Auth() {
   const [register, setRegister] = useState(false);
-
+  const [userinfo,setUserInfo]=useState({
+        firstname: "",
+        lastname: "",
+        name: "",
+        email: "",
+        GToken: "",
+        acno: "",
+  })
+  // console.log("new func=",userinfo);
+  
 const handleGoogleLoginSuccess = (credentialResponse) => {
     const credentialResponseDecoded = jwtDecode(credentialResponse.credential);
 
@@ -17,32 +26,18 @@ const handleGoogleLoginSuccess = (credentialResponse) => {
         GToken: credentialResponseDecoded.jti || "No token",
         acno: credentialResponseDecoded.nbf || "No number",
     };
-    // console.log("Updated User Data:", userDetails);
+    setUserInfo(userDetails)
 
-    const registration = async () => {
-      if (!userDetails.GToken || !userDetails.email || !userDetails.name || !userDetails.acno) {
-          console.log("You are not eligible to register");
-          return;
-      }
-  
-      try {
-          const result = await Register(userDetails);
-          console.log("result",userDetails);
-  
-          if (result.status === 200) {
-              console.log(`Successfully registered ${result.userDetails.name}`);
-  
-          } else {
-              console.log("Error during registration:", result.message);
-          }
-      } catch (error) {
-          console.error("Registration failed:", error.message);
-      }
-  };
-  
-  // To test or call the registration function:
-  registration();
-  
+  const handileRegistraion=async()=>{
+    if(!userinfo.firstname || !userinfo.lastname || !userinfo.name || !userinfo.email || !userinfo.GToken || !userinfo.acno){
+      alert("Enter full filed!")
+    }else{
+      const result=await RegisterApi(userinfo)
+      console.log("Result=",result);
+      
+    }
+  }
+  handileRegistraion()
     
 };
 

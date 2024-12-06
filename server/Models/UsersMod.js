@@ -1,31 +1,26 @@
 const mongoose = require('mongoose')
 
 const usersSchema=new mongoose.Schema({
-    Gtoken:{
-        type:String,
-        required:true,
-        unique:true
-    },
     acno:{
-        type:Number,
-        required:true,
-        unique:true
+        type: Number,
+        required: true,
+        unique: true,
     },
     firstname:{
-        type:String,
+        type:String
     },
     lastname:{
-        type:String,
+        type:String
     },
     name:{
         type:String,
-        required:true,
+        required:true
     },
     email:{
-        type:String,
-        required:true,
-        unique:true
-    },
+        type: String,
+        required: true,
+        unique: true,
+    }
 })
 
 const users=mongoose.model('Users',usersSchema)

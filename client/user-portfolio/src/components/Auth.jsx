@@ -37,7 +37,7 @@ const handleGoogleRegisterSuccess = (credentialResponse) => {
   handileRegistraion(userDetails)
 };
 
-
+// ---------- Login -----------------------
 const handleGoogleLoginSuccess= (credentialResponse)=>{
   const credentialResponseDecodedLog = jwtDecode(credentialResponse.credential);
 
@@ -48,22 +48,28 @@ const handleGoogleLoginSuccess= (credentialResponse)=>{
     email: credentialResponseDecodedLog.email || "No email provided",
     acno: credentialResponseDecodedLog.nbf || "No number",
 };
-console.log("Login detailse:",userLoginDetails);
+// console.log("Login detailse:",userLoginDetails);
 
+// ---------- Login function -----------------------
   const handileLogin=async()=>{
     const {acno,email,name } = userLoginDetails;
     if(!acno || !email || !name){
       alert("Enter full filed!")
     }else{
       const result=await LoginApi(userLoginDetails)
-      if(result.status === 200 && res.data.existingUser){
-        alert(`Login success ${result.data.name}`)
-        sessionStorage.setItem("role", res.data.role);
-        sessionStorage.setItem("token",res.data.token)
+      if(result.status === 200){
+        if(sessionStorage.getItem("role", result.data.role) && sessionStorage.getItem("token",result.data.token)){
+          alert("Your already login!!")
+        }else{
+          alert(`Login success ${result.data.existingUser.name}`)        
+          sessionStorage.setItem("role", result.data.role);
+          sessionStorage.setItem("token",result.data.token)
+          // sessionStorage.setItem("name",result.data.existingUser.name)
+        }
+          
       }else{
         alert(result.response.data)
-        console.log(result.response);
-        
+        console.log(result.response);  
       }
     }
   }

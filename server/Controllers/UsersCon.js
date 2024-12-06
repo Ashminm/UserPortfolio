@@ -20,12 +20,12 @@ exports. userRegister= async(req,res)=>{
 }
 
 exports.userLogin= async(req,res)=>{
-    const {acno,email,name} = req.body
-    const existingUser=await users.findOne({acno,email,name})
+    const {name,email} = req.body
+    const existingUser=await users.findOne({email,name})
     if(existingUser){
         const token=jwt.sign({userID:existingUser._id},process.env.seacretkey)
         res.status(200).json({token,existingUser,role:'user'})
-        console.log("Result Login:",token,existingUser);   
+        console.log("Result Login:",existingUser);   
     }else{
         res.status(406).json('your not register this email using. Pleas register!!')
     }

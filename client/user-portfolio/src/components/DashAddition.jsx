@@ -1,6 +1,42 @@
-import React from 'react'
+import React,{useState,useEffect} from 'react'
+import {AddProfile} from '../Services/Apicall'
+
 
 function DashAddition() {
+    const [preview,setPriview]=useState('')
+    const [allProfile,setAllProfiles]=useState({
+        profileimg:'',name:'',position:'',about:'',resume:'',userID:''
+    })
+    useEffect(()=>{
+        const CurrentUser=JSON.parse(sessionStorage.getItem('CurrentUser'))
+        setAllProfiles({...allProfile,userID:CurrentUser._id})
+    },[])
+    useEffect(()=>{
+        if(allProfile.profileimg){
+            setPriview(URL.createObjectURL(allProfile.profileimg))
+        }
+    },[allProfile.profileimg])
+
+    // console.log(allProfile);
+    const handileProfile=async()=>{
+        if(!allProfile.profileimg || !allProfile.name || !allProfile.position || !allProfile.about || !allProfile.resume || !allProfile.userID){
+            alert('Plese complete detailse!')
+        }else{
+            const profileD=new FormData()
+            profileD.append("profileimg",allProfile.profileimg);
+            profileD.append("name",allProfile.name);
+            profileD.append("position",allProfile.position);
+            profileD.append("about",allProfile.about);
+            profileD.append("resume",allProfile.resume);
+            profileD.append("userID",allProfile.userID);
+            console.log(profileD);
+            
+        }
+    }
+
+
+
+
   return (
     <div className='pb-5'>
     <div className="px-5 py-3 w-full">
@@ -10,24 +46,24 @@ function DashAddition() {
                     <div className="bg-gray-100 rounded-md p-3 py-5 mb-6">
                         <div className="flex justify-between items-center">
                            <div className='flex flex-col xs:w-auto w-full lg:pe-10 md:pe-7 sm:pe-4 xs:pe-2 '>
-                           <input type="file" name="" id="profile" className=' w-full hidden' />
+                           <input type="file" name="" id="profile" className=' w-full hidden' onChange={(e)=>setAllProfiles({...allProfile,profileimg:e.target.files[0]})} />
                            <label htmlFor="profile" className='w-full mb-4 border-2 border-dashed rounded-md py-3 px-10 cursor-pointer'>Profile pic </label>
 
-                            <input type="text" name="" id="" className='py-2 px-3 border-2 text-sm mb-4' placeholder='Enter your name' />
-                            <input type="text" name="" id="" className='py-2 px-3 border-2 text-sm mb-4' placeholder='Enter who are you' />
+                            <input type="text" name="" id="" className='py-2 px-3 border-2 text-sm mb-4' placeholder='Enter your name' onChange={(e)=>setAllProfiles({...allProfile,name:e.target.value})} />
+                            <input type="text" name="" id="" className='py-2 px-3 border-2 text-sm mb-4' placeholder='Enter who are you' onChange={(e)=>setAllProfiles({...allProfile,position:e.target.value})} />
                            </div>
 
                             <div className='w-40 mx-auto'>
-                            <img src="https://plus.unsplash.com/premium_photo-1689977968861-9c91dbb16049?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cHJvZmlsZSUyMHBpY3R1cmV8ZW58MHx8MHx8fDA%3D" className='w-32 h-32 bg-no-repeat object-cover rounded-full mx-auto overflow-hidden border-2' alt="user profile" />
+                            <img src={preview?preview:"https://plus.unsplash.com/premium_photo-1689977968861-9c91dbb16049?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cHJvZmlsZSUyMHBpY3R1cmV8ZW58MHx8MHx8fDA%3D"} className='w-32 h-32 bg-no-repeat object-cover rounded-full mx-auto overflow-hidden border-2' alt="user profile" />
 
                             </div>
                         </div>
                         <div className="w-full">
-                        <textarea name="" id="" className='w-full py-2 px-3 border-2 text-sm mb-4' placeholder='About your self...'></textarea>
+                        <textarea name="" id="" className='w-full py-2 px-3 border-2 text-sm mb-4' placeholder='About your self...' onChange={(e)=>setAllProfiles({...allProfile,about:e.target.value})}></textarea>
                            <div className="flex items-center justify-center gap-6">
-                           <input type="file" name="" id="resume" className=' hidden w-full' />
+                           <input type="file" name="" id="resume" className=' hidden w-full' onChange={(e)=>setAllProfiles({...allProfile,resume:e.target.files[0]})} />
                             <label htmlFor="resume" className='w-full border-2 border-dashed rounded-md cursor-pointer py-2 px-3 text-center'> Resume</label>
-                            <button className='py-2 px-3 border-2 border-green-400 text-sm bg-green-300 w-full'>ADD</button>
+                            <button type='submit' className='py-2 px-3 border-2 border-green-400 text-sm bg-green-300 w-full' onClick={handileProfile}>ADD</button>
                            </div>
 
                         </div>

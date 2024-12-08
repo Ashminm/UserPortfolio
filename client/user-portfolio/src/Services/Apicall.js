@@ -26,4 +26,8 @@ export const LoginApi = async (data) => {
     return await commonApi("POST", `${BASEURL}/user/login`, data, "");
 };
 
+export const AddProfile=async(data,headers)=>{
+    return await commonApi("POST",`${BASEURL}/add-profile`, data,headers)
+}
+
 

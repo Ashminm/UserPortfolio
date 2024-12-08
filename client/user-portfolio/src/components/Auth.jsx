@@ -1,7 +1,8 @@
-import React, { useState,useEffect } from 'react';
+import React, { useState} from 'react';
 import { GoogleLogin } from '@react-oauth/google';
 import { jwtDecode } from "jwt-decode";
 import {RegisterApi,LoginApi} from '../Services/Apicall'
+import {useNavigate} from 'react-router-dom'
 
 function Auth() {
   const [register, setRegister] = useState(false);
@@ -24,10 +25,11 @@ const handleGoogleRegisterSuccess = (credentialResponse) => {
       alert("Enter full filed!")
     }else{ 
       const result=await RegisterApi(userDetails)
-      console.log(result);
+      // console.log(result);
       
       if(result.status === 200){
         alert(`Registration success ${result.data.name}`)
+        toggleRegister()
       }else{
         alert(result.response.data)
       }
@@ -61,21 +63,23 @@ const handleGoogleLoginSuccess= (credentialResponse)=>{
         if(sessionStorage.getItem("role", result.data.role) && sessionStorage.getItem("token",result.data.token)){
           alert("Your already login!!")
         }else{
-          alert(`Login success ${result.data.existingUser.name}`)        
-          sessionStorage.setItem("role", result.data.role);
+          alert(`Login success ${result.data.existingUser.name}`)
+          sessionStorage.setItem("CurrentUser",JSON.stringify(result.data.existingUser))
           sessionStorage.setItem("token",result.data.token)
-          // sessionStorage.setItem("name",result.data.existingUser.name)
+          sessionStorage.setItem("role",result.data.role)
+          navigate('/dashboard')
         }
           
       }else{
         alert(result.response.data)
-        console.log(result.response);  
+        // console.log(result.response);  
       }
     }
   }
   handileLogin(userLoginDetails)
 };
 
+  const navigate= useNavigate()
   const toggleRegister = () => setRegister(!register);
 
   return (

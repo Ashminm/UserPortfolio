@@ -18,12 +18,12 @@ function Dashboard() {
             <p className='text-lg mb-2'>Hi, <span>Ashmin</span></p>
         </div>
         <div className="flex gap-5 items-center mt-1 px-5">
-            <button className={activeTab === 'add' ? 'border-b-2 border-black py-1 px-5 bg-green-200 shadow-md' : 'border-b-2 border-black py-1 px-5'}
+            <button className={activeTab === 'add' ? 'border border-black py-0.5 px-3 bg-green-200 shadow-md' : 'border border-black py-0.5 px-3'}
             onClick={()=> handileChange('add')}
-            >Add</button>
-            <button className={activeTab === 'edit' ? 'border-b-2 border-black py-1 px-5 bg-green-200 shadow-md' : 'border-b-2 border-black py-1 px-5'}
+            >Add (7)</button>
+            <button className={activeTab === 'edit' ? 'border border-black py-0.5 px-3 bg-green-200 shadow-md' : 'border border-black py-0.5 px-3'}
             onClick={()=> handileChange('edit')}
-            >Edit</button>
+            >Edit (7)</button>
        
         </div>
             {activeTab === 'add' && (

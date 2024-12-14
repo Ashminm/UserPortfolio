@@ -14,11 +14,11 @@ const aboutSchema=new mongoose.Schema({
         required:true
     },
     startyear:{
-        type:Number,
+        type:String,
         required:true
     },
     endyear:{
-        type:Number,
+        type:String,
         required:true
     },
     weblink:{

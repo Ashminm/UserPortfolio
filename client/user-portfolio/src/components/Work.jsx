@@ -16,12 +16,12 @@ function Work() {
                 backgroundSize: "cover",
             }}>
                 <div className="bg-slate-50 hover:bg-slate-200 duration-300 w-56 h-28 rounded-md p-3 px-5 flex  flex-col justify-between">
-                    <p className='font-semibold'>Frontend</p>
+                    <p className='font-semibold m-0'>Frontend</p>
                     <div className="flex justify-between">
-                        <p>project</p>
-                        <a href="#" target='_blank' className='border-2 border-black shadow-md hover:bg-black duration-300 rounded-full w-9 h-9 flex justify-center items-center '><i className='material-icons hover:text-white duration-300'>near_me</i></a>
+                        <p className='m-0' >project</p>
+                        <a href="#" target='_blank' className='border-2  no-underline text-black border-black shadow-md hover:bg-black duration-300 rounded-full w-9 h-9 flex justify-center items-center '><i className='material-icons hover:text-white duration-300'>near_me</i></a>
                     </div>
-                    <p>Web Design</p>
+                    <p className='m-0'>Web Design</p>
                 </div>
             </div>
             <div className=' w-64 h-48 rounded-md text-start p-4 pt-5 flex items-end justify-center' style={{
@@ -29,12 +29,12 @@ function Work() {
                 backgroundSize: "cover"
             }}>
                 <div className="bg-slate-50 hover:bg-slate-200 duration-300 w-56 h-28 rounded-md p-3 px-5 flex  flex-col justify-between">
-                    <p className='font-semibold'>Frontend</p>
+                    <p className='font-semibold m-0'>Frontend</p>
                     <div className="flex justify-between">
-                        <p>project</p>
-                        <a href="#" target='_blank' className='border-2 border-black shadow-md hover:bg-black duration-300 rounded-full w-9 h-9 flex justify-center items-center '><i className='material-icons  hover:text-white duration-300'>near_me</i></a>
+                        <p className='m-0' >project</p>
+                        <a href="#" target='_blank' className='border-2 no-underline text-black  border-black shadow-md hover:bg-black duration-300 rounded-full w-9 h-9 flex justify-center items-center '><i className='material-icons  hover:text-white duration-300'>near_me</i></a>
                     </div>
-                    <p>Web Design</p>
+                    <p className='m-0'>Web Design</p>
                 </div>
             </div>
             <div className=' w-64 h-48 rounded-md text-start p-4 pt-5 flex items-end justify-center' style={{
@@ -42,12 +42,12 @@ function Work() {
                 backgroundSize: "cover"
             }}>
                 <div className="bg-slate-50 hover:bg-slate-200 duration-300 w-56 h-28 rounded-md p-3 px-5 flex  flex-col justify-between">
-                    <p className='font-semibold'>Frontend</p>
+                    <p className='font-semibold m-0'>Frontend</p>
                     <div className="flex justify-between">
-                        <p>project</p>
-                        <a href="#" target='_blank' className='border-2 border-black shadow-md hover:bg-black duration-300 rounded-full w-9 h-9 flex justify-center items-center '><i className='material-icons  hover:text-white duration-300'>near_me</i></a>
+                        <p className='m-0' >project</p>
+                        <a href="#" target='_blank' className='border-2 no-underline text-black  border-black shadow-md hover:bg-black duration-300 rounded-full w-9 h-9 flex justify-center items-center '><i className='material-icons  hover:text-white duration-300'>near_me</i></a>
                     </div>
-                    <p>Web Design</p>
+                    <p className='m-0'>Web Design</p>
                 </div>
             </div>
             <div className=' w-64 h-48 rounded-md text-start p-4 pt-5 flex items-end justify-center' style={{
@@ -55,12 +55,12 @@ function Work() {
                 backgroundSize: "cover"
             }}>
                 <div className="bg-slate-50 hover:bg-slate-200 duration-300 w-56 h-28 rounded-md p-3 px-5 flex  flex-col justify-between">
-                    <p className='font-semibold'>Frontend</p>
+                    <p className='font-semibold m-0'>Frontend</p>
                     <div className="flex justify-between">
-                        <p>project</p>
-                        <a href="#" target='_blank' className='border-2 border-black shadow-md hover:bg-black duration-300 rounded-full w-9 h-9 flex justify-center items-center '><i className='material-icons  hover:text-white duration-300'>near_me</i></a>
+                        <p className='m-0' >project</p>
+                        <a href="#" target='_blank' className='border-2 no-underline text-black  border-black shadow-md hover:bg-black duration-300 rounded-full w-9 h-9 flex justify-center items-center '><i className='material-icons  hover:text-white duration-300'>near_me</i></a>
                     </div>
-                    <p>Web Design</p>
+                    <p className='m-0'>Web Design</p>
                 </div>
             </div>
             <div className=' w-64 h-48 rounded-md text-start p-4 pt-5 flex items-end justify-center bg-no-repeat object-cover overflow-hidden' style={{
@@ -68,19 +68,19 @@ function Work() {
                 backgroundSize: "cover"
             }}>
                 <div className="bg-slate-50 hover:bg-slate-200 duration-300 w-56 h-28 rounded-md p-3 px-5 flex  flex-col justify-between">
-                    <p className='font-semibold'>Frontend</p>
+                    <p className='font-semibold m-0'>Frontend</p>
                     <div className="flex justify-between">
-                        <p>project</p>
-                        <a href="#" target='_blank' className='border-2 border-black shadow-md hover:bg-black duration-300 rounded-full w-9 h-9 flex justify-center items-center '><i className='material-icons  hover:text-white duration-300'>near_me</i></a>
+                        <p className='m-0' >project</p>
+                        <a href="#" target='_blank' className='border-2 no-underline text-black  border-black shadow-md hover:bg-black duration-300 rounded-full w-9 h-9 flex justify-center items-center '><i className='material-icons  hover:text-white duration-300'>near_me</i></a>
                     </div>
-                    <p>Web Design</p>
+                    <p className='m-0'>Web Design</p>
                 </div>
             </div>
         </div>
         </div>
         {/* ---------- see more ----------- */}
         <div className="flex justify-center items-center h-40">
-            <button className='bg-zinc-800 hover:bg-zinc-700 duration-300 text-white flex items-center gap-2 px-4 py-1.5 sm:px-8 sm:py-3 text-sm rounded-full'>See more<i class="material-icons">arrow_right_alt</i></button>
+            <button className='bg-zinc-800 hover:bg-zinc-700 duration-300 text-white flex items-center gap-2 px-4 py-1.5 sm:px-8 sm:py-3 text-sm rounded-full'>See more<i className="material-icons">arrow_right_alt</i></button>
             </div>
       </div>
     </div>

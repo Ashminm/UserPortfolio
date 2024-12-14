@@ -19,9 +19,11 @@ function Home() {
     const logout=()=>{
         if(sessionStorage.getItem("CurrentUser")){
             sessionStorage.removeItem("CurrentUser")
+            sessionStorage.removeItem("token")
+            sessionStorage.removeItem("role")
             alert("Your logout")
         }else{
-            alert('Your not login. Please try to login after Logout')
+            alert('Your not login. Please try to login after Logout!')
         }
     }
 

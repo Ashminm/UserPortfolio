@@ -9,9 +9,9 @@ function Footer() {
             <p>2024 Ashmin. All right reserved.</p>
         </div>
         <div className="grid lg:grid-cols-3 md:grid-cols-3 sm:grid-cols-3 xs:grid-cols-1">
-            <a href="">GitHub</a>
-            <a href="">LinkedIn</a>
-            <a href="">Instagram</a>
+            <a href="" className='no-underline text-black'>GitHub</a>
+            <a href="" className='no-underline text-black'>LinkedIn</a>
+            <a href="" className='no-underline text-black'>Instagram</a>
         </div>
       </div>
     </div>

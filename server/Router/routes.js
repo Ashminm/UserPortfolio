@@ -10,6 +10,8 @@ const languageControl=require('../Controllers/LanguageCon')
 const currentControl=require('../Controllers/CurrentCon')
 const expeControll=require('../Controllers/ExpeCon')
 const skillControll=require('../Controllers/SkillCon')
+const toolControll=require('../Controllers/ToolCon')
+const serviceControll=require('../Controllers/ServiceCon')
 const recentWorkControll=require('../Controllers/RecentWorkCon')
 
 const router=new express.Router()
@@ -37,6 +39,10 @@ router.get('/get-experiance',middilewares,expeControll.getExpe)
 
 router.post('/add-skill',middilewares,skillControll.addSkills)
 router.get('/get-skills',middilewares,skillControll.getSkills)
+
+router.post('/add-tool',middilewares,toolControll.addTools)
+
+router.post('/add-service',middilewares,serviceControll.addService)
 
 router.post('/add-work',middilewares,multerConfig.fields([{name:'projectimg',maxCount:1}]),recentWorkControll.addRecent)
 router.get('/get-work',middilewares,recentWorkControll.getWork)

@@ -1,5 +1,6 @@
 import React from 'react';
 import Edit from './Edit';
+import Delete from './Delete'
 import {
     Button,
     Dialog,
@@ -49,37 +50,7 @@ function DashContent() {
               <p>Resume</p>
               <div className="flex items-center gap-3">
                 <Edit/>
-
-                <Button onClick={handleOpen} variant="text">   <span className="material-icons text-2xl md:text-3xl">delete</span></Button>
-                    <Dialog open={open} handler={handleOpen}
-                        className="bg-transprent backdrop-blur-md shadow-lg border-2 rounded-lg max-w-sm w-full h-auto lg:max-h-[30vh] my-auto mx-auto  fixed inset-0 z-50"
-
-                    >
-                        <DialogHeader>
-                        </DialogHeader>
-                        <DialogBody divider className="grid place-items-center gap-4">
-                            <span className="material-icons text-6xl">delete_forever</span>
-                        
-                        <Typography color="red" variant="h4">
-                           Do you want Delete?
-                        </Typography>
-                        <Typography className="text-center font-normal">
-                            Profile information.
-                        </Typography>
-                        </DialogBody>
-                        <DialogFooter className="space-x-4 flex justify-end items-center">
-                        <Button variant="text" onClick={handleOpen}>
-                            close
-                        </Button>
-                        <Button variant="text" className='bg-black text-white px-3' onClick={handleOpen}>
-                            Delete forever
-                        </Button>
-                        </DialogFooter>
-                    </Dialog>
-
-                {/* <button>
-                  <span className="material-icons text-2xl md:text-3xl">delete</span>
-                </button> */}
+                <Delete/>
               </div>
             </div>
           ))}
@@ -120,33 +91,7 @@ function DashContent() {
               <p>Resume</p>
               <div className="flex items-center gap-3">
               <Edit/>
-
-            <Button onClick={handleOpen} variant="text">   <span className="material-icons text-2xl md:text-3xl">delete</span></Button>
-                <Dialog open={open} handler={handleOpen}
-                    className="bg-transprent backdrop-blur-md shadow-lg border-2 rounded-lg max-w-sm w-full h-auto lg:max-h-[30vh] my-auto mx-auto  fixed inset-0 z-50"
-
-                >
-                    <DialogHeader>
-                    </DialogHeader>
-                    <DialogBody divider className="grid place-items-center gap-4">
-                        <span className="material-icons text-6xl">delete_forever</span>
-                    
-                    <Typography color="red" variant="h4">
-                    Do you want Delete?
-                    </Typography>
-                    <Typography className="text-center font-normal">
-                        Profile information.
-                    </Typography>
-                    </DialogBody>
-                    <DialogFooter className="space-x-4 flex justify-end items-center">
-                    <Button variant="text" onClick={handleOpen}>
-                        close
-                    </Button>
-                    <Button variant="text" className='bg-black text-white px-3' onClick={handleOpen}>
-                        Delete forever
-                    </Button>
-                    </DialogFooter>
-                </Dialog>
+              <Delete/>
               </div>
             </div>
           ))}
@@ -174,32 +119,7 @@ function DashContent() {
               <div className="flex items-center gap-3">
               <Edit/>
 
-                <Button onClick={handleOpen} variant="text">   <span className="material-icons text-2xl md:text-3xl">delete</span></Button>
-                    <Dialog open={open} handler={handleOpen}
-                        className="bg-transprent backdrop-blur-md shadow-lg border-2 rounded-lg max-w-sm w-full h-auto lg:max-h-[30vh] my-auto mx-auto  fixed inset-0 z-50"
-
-                    >
-                        <DialogHeader>
-                        </DialogHeader>
-                        <DialogBody divider className="grid place-items-center gap-4">
-                            <span className="material-icons text-6xl">delete_forever</span>
-                        
-                        <Typography color="red" variant="h4">
-                        Do you want Delete?
-                        </Typography>
-                        <Typography className="text-center font-normal">
-                            Profile information.
-                        </Typography>
-                        </DialogBody>
-                        <DialogFooter className="space-x-4 flex justify-end items-center">
-                        <Button variant="text" onClick={handleOpen}>
-                            close
-                        </Button>
-                        <Button variant="text" className='bg-black text-white px-3' onClick={handleOpen}>
-                            Delete forever
-                        </Button>
-                        </DialogFooter>
-                    </Dialog>
+              <Delete/>
               </div>
             </div>
           ))}
@@ -225,33 +145,7 @@ function DashContent() {
              <p>About</p>
               <div className="flex items-center gap-3">
               <Edit/>
-
-            <Button onClick={handleOpen} variant="text">   <span className="material-icons text-2xl md:text-3xl">delete</span></Button>
-                <Dialog open={open} handler={handleOpen}
-                    className="bg-transprent backdrop-blur-md shadow-lg border-2 rounded-lg max-w-sm w-full h-auto lg:max-h-[30vh] my-auto mx-auto  fixed inset-0 z-50"
-
-                >
-                    <DialogHeader>
-                    </DialogHeader>
-                    <DialogBody divider className="grid place-items-center gap-4">
-                        <span className="material-icons text-6xl">delete_forever</span>
-                    
-                    <Typography color="red" variant="h4">
-                    Do you want Delete?
-                    </Typography>
-                    <Typography className="text-center font-normal">
-                        Profile information.
-                    </Typography>
-                    </DialogBody>
-                    <DialogFooter className="space-x-4 flex justify-end items-center">
-                    <Button variant="text" onClick={handleOpen}>
-                        close
-                    </Button>
-                    <Button variant="text" className='bg-black text-white px-3' onClick={handleOpen}>
-                        Delete forever
-                    </Button>
-                    </DialogFooter>
-                </Dialog>
+              <Delete/>
               </div>
             </div>
           ))}
@@ -287,32 +181,7 @@ function DashContent() {
               <div className="flex items-center gap-3">
               <Edit/>
 
-            <Button onClick={handleOpen} variant="text">   <span className="material-icons text-2xl md:text-3xl">delete</span></Button>
-                <Dialog open={open} handler={handleOpen}
-                    className="bg-transprent backdrop-blur-md shadow-lg border-2 rounded-lg max-w-sm w-full h-auto lg:max-h-[30vh] my-auto mx-auto  fixed inset-0 z-50"
-
-                >
-                    <DialogHeader>
-                    </DialogHeader>
-                    <DialogBody divider className="grid place-items-center gap-4">
-                        <span className="material-icons text-6xl">delete_forever</span>
-                    
-                    <Typography color="red" variant="h4">
-                    Do you want Delete?
-                    </Typography>
-                    <Typography className="text-center font-normal">
-                        Profile information.
-                    </Typography>
-                    </DialogBody>
-                    <DialogFooter className="space-x-4 flex justify-end items-center">
-                    <Button variant="text" onClick={handleOpen}>
-                        close
-                    </Button>
-                    <Button variant="text" className='bg-black text-white px-3' onClick={handleOpen}>
-                        Delete forever
-                    </Button>
-                    </DialogFooter>
-                </Dialog>
+              <Delete/>
               </div>
             </div>
           ))}
@@ -346,32 +215,7 @@ function DashContent() {
               <div className="flex items-center gap-3">
               <Edit/>
 
-            <Button onClick={handleOpen} variant="text">   <span className="material-icons text-2xl md:text-3xl">delete</span></Button>
-                <Dialog open={open} handler={handleOpen}
-                    className="bg-transprent backdrop-blur-md shadow-lg border-2 rounded-lg max-w-sm w-full h-auto lg:max-h-[30vh] my-auto mx-auto  fixed inset-0 z-50"
-
-                >
-                    <DialogHeader>
-                    </DialogHeader>
-                    <DialogBody divider className="grid place-items-center gap-4">
-                        <span className="material-icons text-6xl">delete_forever</span>
-                    
-                    <Typography color="red" variant="h4">
-                    Do you want Delete?
-                    </Typography>
-                    <Typography className="text-center font-normal">
-                        Profile information.
-                    </Typography>
-                    </DialogBody>
-                    <DialogFooter className="space-x-4 flex justify-end items-center">
-                    <Button variant="text" onClick={handleOpen}>
-                        close
-                    </Button>
-                    <Button variant="text" className='bg-black text-white px-3' onClick={handleOpen}>
-                        Delete forever
-                    </Button>
-                    </DialogFooter>
-                </Dialog>
+              <Delete/>
               </div>
             </div>
           ))}
@@ -397,32 +241,7 @@ function DashContent() {
               <div className="flex items-center gap-3">
               <Edit/>
 
-            <Button onClick={handleOpen} variant="text">   <span className="material-icons text-2xl md:text-3xl">delete</span></Button>
-                <Dialog open={open} handler={handleOpen}
-                    className="bg-transprent backdrop-blur-md shadow-lg border-2 rounded-lg max-w-sm w-full h-auto lg:max-h-[30vh] my-auto mx-auto  fixed inset-0 z-50"
-
-                >
-                    <DialogHeader>
-                    </DialogHeader>
-                    <DialogBody divider className="grid place-items-center gap-4">
-                        <span className="material-icons text-6xl">delete_forever</span>
-                    
-                    <Typography color="red" variant="h4">
-                    Do you want Delete?
-                    </Typography>
-                    <Typography className="text-center font-normal">
-                        Profile information.
-                    </Typography>
-                    </DialogBody>
-                    <DialogFooter className="space-x-4 flex justify-end items-center">
-                    <Button variant="text" onClick={handleOpen}>
-                        close
-                    </Button>
-                    <Button variant="text" className='bg-black text-white px-3' onClick={handleOpen}>
-                        Delete forever
-                    </Button>
-                    </DialogFooter>
-                </Dialog>
+              <Delete/>
               </div>
             </div>
           ))}
@@ -447,32 +266,7 @@ function DashContent() {
               <div className="flex items-center gap-3">
               <Edit/>
 
-            <Button onClick={handleOpen} variant="text">   <span className="material-icons text-2xl md:text-3xl">delete</span></Button>
-                <Dialog open={open} handler={handleOpen}
-                    className="bg-transprent backdrop-blur-md shadow-lg border-2 rounded-lg max-w-sm w-full h-auto lg:max-h-[30vh] my-auto mx-auto  fixed inset-0 z-50"
-
-                >
-                    <DialogHeader>
-                    </DialogHeader>
-                    <DialogBody divider className="grid place-items-center gap-4">
-                        <span className="material-icons text-6xl">delete_forever</span>
-                    
-                    <Typography color="red" variant="h4">
-                    Do you want Delete?
-                    </Typography>
-                    <Typography className="text-center font-normal">
-                        Profile information.
-                    </Typography>
-                    </DialogBody>
-                    <DialogFooter className="space-x-4 flex justify-end items-center">
-                    <Button variant="text" onClick={handleOpen}>
-                        close
-                    </Button>
-                    <Button variant="text" className='bg-black text-white px-3' onClick={handleOpen}>
-                        Delete forever
-                    </Button>
-                    </DialogFooter>
-                </Dialog>
+              <Delete/>
               </div>
             </div>
           ))}
@@ -513,32 +307,7 @@ function DashContent() {
               <div className="flex items-center gap-3">
               <Edit/>
 
-            <Button onClick={handleOpen} variant="text">   <span className="material-icons text-2xl md:text-3xl">delete</span></Button>
-                <Dialog open={open} handler={handleOpen}
-                    className="bg-transprent backdrop-blur-md shadow-lg border-2 rounded-lg max-w-sm w-full h-auto lg:max-h-[30vh] my-auto mx-auto  fixed inset-0 z-50"
-
-                >
-                    <DialogHeader>
-                    </DialogHeader>
-                    <DialogBody divider className="grid place-items-center gap-4">
-                        <span className="material-icons text-6xl">delete_forever</span>
-                    
-                    <Typography color="red" variant="h4">
-                    Do you want Delete?
-                    </Typography>
-                    <Typography className="text-center font-normal">
-                        Profile information.
-                    </Typography>
-                    </DialogBody>
-                    <DialogFooter className="space-x-4 flex justify-end items-center">
-                    <Button variant="text" onClick={handleOpen}>
-                        close
-                    </Button>
-                    <Button variant="text" className='bg-black text-white px-3' onClick={handleOpen}>
-                        Delete forever
-                    </Button>
-                    </DialogFooter>
-                </Dialog>
+              <Delete/>
               </div>
             </div>
           ))}

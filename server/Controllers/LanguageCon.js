@@ -3,9 +3,10 @@ const langs=require('../Models/LanguageMod')
 exports.addLanguage=async(req,res)=>{
     try{
         const {language,preference}=req.body
+        console.log(language,preference);
         
         if (!language || !preference) {
-            return res.status(400).json({ error: "Both 'language' and 'preference' fields are required." });
+            return res.status(400).json("Both 'language' and 'preference' fields are required.");
         }
         const userID=req.payload
         const existingLang=await langs.findOne({language,preference,userID})

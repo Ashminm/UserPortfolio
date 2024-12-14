@@ -1,5 +1,5 @@
 import React from 'react'
-import Footer from './Footer'
+// import Footer from './Footer'
 
 function Education() {
   return (
@@ -20,7 +20,7 @@ function Education() {
                 <h2 className='lg:text-2xl md:text-2xl sm:text-lg xs:text-md mb-2'>Luminar Technolab</h2>
                 <h4 className='lg:text-2xl md:text-2xl sm:text-lg xs:text-md font-semibold mb-2 mb-2'>Web development</h4>
                 <div className="flex justify-between w-3/5">
-                <h4 className='lg:text-lg md:text-xl sm:text-lg xs:text-md text-red-400'>2023 - 2024</h4> <a className='lg:text-md md:text-md sm:text-sm xs:text-sm' href="#" target='_blank'><i className='material-icons text-3xl'>assistant_navigation</i></a>
+                <h4 className='lg:text-lg md:text-xl sm:text-lg xs:text-md text-red-400'>2023 - 2024</h4> <a className='lg:text-md md:text-md sm:text-sm xs:text-sm text-black' href="#" target='_blank'><i className='material-icons text-3xl'>assistant_navigation</i></a>
                 </div>
                 </div>
         </div>
@@ -30,7 +30,7 @@ function Education() {
                 <h2 className='lg:text-2xl md:text-2xl sm:text-lg xs:text-md mb-2'>Luminar Technolab</h2>
                 <h4 className='lg:text-2xl md:text-2xl sm:text-lg xs:text-md font-semibold mb-2 mb-2'>Web development</h4>
                 <div className="flex justify-between w-3/5">
-                <h4 className='lg:text-lg md:text-xl sm:text-lg xs:text-md text-red-400'>2023 - 2024</h4> <a className='lg:text-md md:text-md sm:text-sm xs:text-sm' href="#" target='_blank'><i className='material-icons text-3xl'>assistant_navigation</i></a>
+                <h4 className='lg:text-lg md:text-xl sm:text-lg xs:text-md text-red-400'>2023 - 2024</h4> <a className='lg:text-md md:text-md sm:text-sm xs:text-sm text-black' href="#" target='_blank'><i className='material-icons text-3xl'>assistant_navigation</i></a>
                 </div>
                 </div>
         </div>
@@ -40,7 +40,7 @@ function Education() {
                 <h2 className='lg:text-2xl md:text-2xl sm:text-lg xs:text-md mb-2'>Luminar Technolab</h2>
                 <h4 className='lg:text-2xl md:text-2xl sm:text-lg xs:text-md font-semibold mb-2 mb-2'>Web development</h4>
                 <div className="flex justify-between w-3/5">
-                <h4 className='lg:text-lg md:text-xl sm:text-lg xs:text-md text-red-400'>2023 - 2024</h4> <a className='lg:text-md md:text-md sm:text-sm xs:text-sm' href="#" target='_blank'><i className='material-icons text-3xl'>assistant_navigation</i></a>
+                <h4 className='lg:text-lg md:text-xl sm:text-lg xs:text-md text-red-400'>2023 - 2024</h4> <a className='lg:text-md md:text-md sm:text-sm xs:text-sm text-black' href="#" target='_blank'><i className='material-icons text-3xl'>assistant_navigation</i></a>
                 </div>
                 </div>
         </div>
@@ -53,11 +53,11 @@ function Education() {
 
     <div className="grid lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-2 xs:grid-cols-1">
         <div>
-            <p className='text-xs'>Knows</p>
+            <p className='text-xs m-0'>Knows</p>
             <p className='text-4xl mb-5'>Languages</p>
         </div>
         <div className='grid xl:grid-cols-3 lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1 xs:grid-cols-1 gap-4'>
-               <div className="bg-gray-200 shadow-md hover:bg-slate-300 duration-300 w-52 flex gap-4 p-4">
+               <div className="bg-gray-200 shadow-md hover:bg-slate-300 duration-300 w-52 flex gap-4 p-4 pb-0">
                     <div>
                     <i className='material-icons text-3xl'>looks_one</i>
                     </div>
@@ -66,7 +66,7 @@ function Education() {
                         <p className='text-sm text-slate-500 italic'>Good</p>
                     </div>
                </div>
-               <div className="bg-gray-200 shadow-md hover:bg-slate-300 duration-300 w-52 flex gap-4 p-4">
+               <div className="bg-gray-200 shadow-md hover:bg-slate-300 duration-300 w-52 flex gap-4 p-4 pb-0">
                     <div>
                     <i className='material-icons text-3xl'>looks_two</i>
                     </div>
@@ -75,7 +75,7 @@ function Education() {
                         <p className='text-sm text-slate-500 italic'>Perfect</p>
                     </div>
                </div>
-               <div className="bg-gray-200 shadow-md hover:bg-slate-300 duration-300 w-52 flex gap-4 p-4">
+               <div className="bg-gray-200 shadow-md hover:bg-slate-300 duration-300 w-52 flex gap-4 p-4 pb-0">
                     <div>
                     <i className='material-icons text-3xl'>looks_3</i>
                     </div>
@@ -84,7 +84,7 @@ function Education() {
                         <p className='text-sm text-slate-500 italic'>Good</p>
                     </div>
                </div>
-               <div className="bg-gray-200 shadow-md hover:bg-slate-300 duration-300 w-52 flex gap-4 p-4">
+               <div className="bg-gray-200 shadow-md hover:bg-slate-300 duration-300 w-52 flex gap-4 p-4 pb-0">
                     <div>
                     <i className='material-icons text-3xl'>looks_4</i>
                     </div>

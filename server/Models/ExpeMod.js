@@ -2,11 +2,11 @@ const mongoose=require('mongoose')
 
 const expeSchema=new mongoose.Schema({
     startyear:{
-        type:String,
+        type:Number,
         required:true
     },
     endyear:{
-        type:String,
+        type:Number,
         required:true
     },
     position:{

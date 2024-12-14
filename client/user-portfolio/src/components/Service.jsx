@@ -16,25 +16,25 @@ function Service() {
               <i className='material-icons text-3xl'>looks_one</i>
                   <p className='mt-2'>Web application</p>
                   <p className='mt-4'>ipsum dolor sit amet consectetur, adipisicing </p>
-                  <Link to='/' className='text-xs flex items-center gap-2.5 text-gray-400 mt-2.5 hover:text-slate-500 duration-300'>Read more <i className='material-icons'>arrow_right_alt</i> </Link>     
+                  <Link to='/' className='text-xs no-underline flex items-center gap-2.5 text-gray-400 mt-2.5 hover:text-slate-500 duration-300'>Read more <i className='material-icons'>arrow_right_alt</i> </Link>     
               </div>
               <div className='w-72 h-49 rounded-md text-start p-4 pt-5 flex flex-col justify-between bg-gray-200 hover:bg-slate-300 duration-300'>
               <i className='material-icons text-3xl'>looks_two</i>
                   <p className='mt-2'>Website</p>
                   <p className='mt-4'>ipsum dolor sit amet consectetur, adipisicing </p>
-                  <Link to='/' className='text-xs flex items-center gap-2.5 text-gray-400 mt-2.5 hover:text-slate-500 duration-300'>Read more <i className='material-icons'>arrow_right_alt</i> </Link>     
+                  <Link to='/' className='text-xs no-underline flex items-center gap-2.5 text-gray-400 mt-2.5 hover:text-slate-500 duration-300'>Read more <i className='material-icons'>arrow_right_alt</i> </Link>     
               </div>
               <div className='w-72 h-49 rounded-md text-start p-4 pt-5 flex flex-col justify-between bg-gray-200 hover:bg-slate-300 duration-300'>
               <i className='material-icons text-3xl'>looks_3</i>
                   <p className='mt-2'>UI Design</p>
                   <p className='mt-4'>ipsum dolor sit amet consectetur, adipisicing </p>
-                  <Link to='/' className='text-xs flex items-center gap-2.5 text-gray-400 mt-2.5 hover:text-slate-500 duration-300'>Read more <i className='material-icons'>arrow_right_alt</i> </Link>     
+                  <Link to='/' className='text-xs no-underline flex items-center gap-2.5 text-gray-400 mt-2.5 hover:text-slate-500 duration-300'>Read more <i className='material-icons'>arrow_right_alt</i> </Link>     
               </div>
               <div className='w-72 h-49 rounded-md text-start p-4 pt-5 flex flex-col justify-between bg-gray-200 hover:bg-slate-300 duration-300'>
               <i className='material-icons text-3xl'>looks_4</i>
                   <p className='mt-2'>Mobile app</p>
                   <p className='mt-4'>ipsum dolor sit amet consectetur, adipisicing </p>
-                  <Link to='/' className='text-xs flex items-center gap-2.5 text-gray-400 mt-2.5 hover:text-slate-500 duration-300'>Read more <i className='material-icons'>arrow_right_alt</i> </Link>     
+                  <Link to='/' className='text-xs no-underline flex items-center gap-2.5 text-gray-400 mt-2.5 hover:text-slate-500 duration-300'>Read more <i className='material-icons'>arrow_right_alt</i> </Link>     
               </div>
               </div>
             </div>

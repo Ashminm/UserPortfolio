@@ -1,7 +1,44 @@
-import React from 'react'
+import React, { useState,useEffect } from 'react'
 import { Link } from 'react-router-dom'
+import { GetProfile } from '../Services/Apicall';
 
 function Header() {
+  const [token,setToken]=useState("")
+  const [profiles,setProfiles]=useState([])
+  console.log(profiles);
+
+  useEffect(() => {
+    if (sessionStorage.getItem("token")) {
+      setToken(sessionStorage.getItem("token"));
+    }
+  },[]);
+  useEffect(() => {
+    if (token) {
+      getProfiles()
+    }
+  },[token]);
+
+  const getProfiles=async()=>{
+    try{
+      const reqHeader = {
+        "Content-Type":"application/json","Authorization":`Bearer ${token}`
+      };
+      
+      const result=await GetProfile(reqHeader)
+      console.log("Result",result);
+      
+      if(result.status===200){
+        setProfiles(result.data)      
+      }else{
+        setProfiles([])
+        console.log("Fetching faild!!"); 
+      }
+    }catch(err){
+      console.log(err);
+      
+    }
+  }
+
   return (
     <div className='flex justify-center items-center min-h-screen'>
       <div className="flex flex-col text-center px-5 py-3">
@@ -12,8 +49,8 @@ function Header() {
         <h5 className='text-2xl mb-1'>Hi I'm <span>Ashmin</span></h5>
         <h1 className='text-4xl mb-2 font-semibold'>Web developer</h1>
         <p>Lorem ipsum dolor sit amet consectetur,  saepe praesentium Lorem,ipsum dolor sit amet adipisicing elit. Quibusdam itaque <br className='max-md:hidden' /> dolore dolor magnam, eveniet dolorem dolorum dolores, reprehenderit ad, voluptatibus est eius odio.</p>
-        <div className="flex justify-center gap-5 mt-8">
-            <Link to='/contact'><button className='bg-zinc-800 text-white flex items-center gap-2 px-4 py-1.5 sm:px-8 sm:py-3 text-sm rounded-full hover:bg-gray-600 duration-300'>Contact <i className="material-icons">arrow_right_alt</i></button></Link>
+        <div className="flex justify-center gap-3 mt-8">
+            <Link to='/contact' className='no-underline'><button className='bg-zinc-800 text-white flex items-center gap-2 px-4 py-1.5 sm:px-8 sm:py-3 text-sm rounded-full hover:bg-gray-600 duration-300'>Contact <i className="material-icons">arrow_right_alt</i></button></Link>
             <button className='text-black border border-black flex items-center gap-2 px-4 py-1.5 sm:px-8 sm:py-3 text-sm rounded-full hover:bg-slate-200 duration-300'>My resume <i className="material-icons">download</i></button>  
         </div>
       </div>

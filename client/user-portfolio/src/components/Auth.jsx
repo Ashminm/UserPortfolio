@@ -117,9 +117,9 @@ const handleGoogleLoginSuccess= (credentialResponse)=>{
 
              <div className="flex justify-center items-center mt-4 gap-2">
               {register ? (
-                <p>Already have a profile</p>
+                <p className='m-0'>Already have a profile</p>
               ) : (
-                <p>Don't have a profile</p>
+                <p className='m-0'>Don't have a profile</p>
               )}
   
               <button onClick={toggleRegister} className="text-blue-500 underline">

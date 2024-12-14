@@ -4,7 +4,7 @@ function Experiance() {
   return (
     <div className='flex justify-center items-center pb-5 py-[90px]'>
     <div className="flex flex-col text-center px-5 py-3 w-full">
-       <p className='text-xs'>What I earn</p>
+       <p className='text-xs m-0'>What I earn</p>
        <h1 className='text-4xl mb-5'>Experience</h1>
        <div className='flex justify-center flex-col items-center'>
            <div className="shadow-md border w-full sm:w-4/5 md:w-3/5 lg:w-3/6  flex justify-center flex-col rounded-md mb-4">
@@ -21,36 +21,36 @@ function Experiance() {
        </div>
        <hr className='my-6' />
        <div className="flex flex-col text-center px-5 py-3 w-full">
-       <p className='text-xs'>What I use & earn</p>
+       <p className='text-xs m-0'>What I use & earn</p>
        <h1 className='text-4xl mb-5'>Skills</h1>
             <div className='w-full sm:w-4/5 md:w-3/5 lg:w-3/6 rounded mx-auto bg-slate-200'>
-                <div className='flex justify-center flex-wrap p-5 py-9 gap-3'>
+                <div className='flex justify-center flex-wrap p-5 py-9 pb-4 gap-3'>
                     <div>
-                        <p className='border-2 border-gray-400 bg-gray-300 py-1.5 px-4 rounded-full'>Html</p>
+                        <p className='border-2 border-gray-400 bg-gray-300 py-1.5 px-4 rounded-full m-0'>Html</p>
                     </div>
                     <div>
-                        <p className='border-2 border-gray-400 bg-gray-300 py-1.5 px-4 rounded-full'>Tailwindcss</p>
+                        <p className='border-2 border-gray-400 bg-gray-300 py-1.5 px-4 rounded-full m-0'>Tailwindcss</p>
                     </div>
                     <div>
-                        <p className='border-2 border-gray-400 bg-gray-300 py-1.5 px-4 rounded-full'>Css</p>
+                        <p className='border-2 border-gray-400 bg-gray-300 py-1.5 px-4 rounded-full m-0'>Css</p>
                     </div>
                     <div>
-                        <p className='border-2 border-gray-400 bg-gray-300 py-1.5 px-4 rounded-full'>JavaScript</p>
+                        <p className='border-2 border-gray-400 bg-gray-300 py-1.5 px-4 rounded-full m-0'>JavaScript</p>
                     </div>
                     <div>
-                        <p className='border-2 border-gray-400 bg-gray-300 py-1.5 px-4 rounded-full'>Node</p>
+                        <p className='border-2 border-gray-400 bg-gray-300 py-1.5 px-4 rounded-full m-0'>Node</p>
                     </div>
                     <div>
-                        <p className='border-2 border-gray-400 bg-gray-300 py-1.5 px-4 rounded-full'>React</p>
+                        <p className='border-2 border-gray-400 bg-gray-300 py-1.5 px-4 rounded-full m-0'>React</p>
                     </div>
                     <div>
-                        <p className='border-2 border-gray-400 bg-gray-300 py-1.5 px-4 rounded-full'>Angular</p>
+                        <p className='border-2 border-gray-400 bg-gray-300 py-1.5 px-4 rounded-full m-0'>Angular</p>
                     </div>
                     <div>
-                        <p className='border-2 border-gray-400 bg-gray-300 py-1.5 px-4 rounded-full'>MongoDB</p>
+                        <p className='border-2 border-gray-400 bg-gray-300 py-1.5 px-4 rounded-full m-0'>MongoDB</p>
                     </div>
                     <div>
-                        <p className='border-2 border-gray-400 bg-gray-300 py-1.5 px-4 rounded-full'>Express</p>
+                        <p className='border-2 border-gray-400 bg-gray-300 py-1.5 px-4 rounded-full m-0'>Express</p>
                     </div>
                     
                 </div>
